@@ -97,12 +97,15 @@ nav {
     }
     .section2Container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        gap: 20px;
-        width: 100%;
+        align-content: center;
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
+        gap: 10px;
+        width: 800px;
     }
     .card {
-        place-self: center;
+        display: flex;
+        flex-direction: column;
+
     }
     .cardImgContainer {
         border-style: solid;
@@ -112,11 +115,13 @@ nav {
         height: 150px;
         box-sizing: border-box;
         margin-bottom: 5px;
+        align-self: center;
     }
     .cardText {
         color: #7b7b7b;
         width: 150px;
         text-align: center;
+        align-self: center;
     }
 }
 
